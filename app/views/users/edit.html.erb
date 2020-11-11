@@ -1,0 +1,25 @@
+
+      <h5>アカウントの編集</h5>
+      <button class='btns'><%= link_to "ログアウト",destroy_user_session_path, method: :delete, class: 'link'%></button>
+      <button class='btns'><%= link_to "トップに戻る", :back,class:'link' %></button>
+      <%= form_with model: current_user, local: true do |f|%>
+        <div class='field'>
+          <div class='field label'>
+            <%= f.label :name%>
+          </div>
+          <div class='field input'>
+            <%= f.text_field :name, autofocus: true%>
+          </div>
+        </div>
+        <div class='field'>
+          <div class='field label'>
+            <%= f.label :tel%>
+          </div>
+          <div class='field input'>
+            <%= f.text_field :tel%>
+          </div>
+        </div>
+        <div class='actions'>
+          <%= f.submit "更新後コチラをクリック", class: 'btn'%>
+        </div>
+      <% end %>
