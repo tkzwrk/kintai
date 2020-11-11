@@ -20,8 +20,8 @@
   margin: 50px 0;
   font-weight: 600;
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -52,5 +52,11 @@
 .btn:hover::before {
   -webkit-transform: none;
           transform: none;
+}
+
+span {
+  color: red;
+  font-size: 18px;
+  font-weight: 800;
 }
 /*# sourceMappingURL=kintais.css.map */

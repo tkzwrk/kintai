@@ -23,7 +23,7 @@ $cwhite:white;
   margin:50px 0;
   font-weight: 600;
   cursor: pointer;
-  transition:all .3s;
+  transition:all .5s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -48,4 +48,10 @@ $cwhite:white;
       transform: none;
     }
   }
+}
+
+span{
+  color: red;
+  font-size: 18px;
+  font-weight: 800;
 }
