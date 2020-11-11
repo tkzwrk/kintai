@@ -1,5 +1,6 @@
 <h1 class="title">バイト勤怠システム</h1>
-  <p>○○さんがログインしています</p>
+      <p>現在、<%= current_user.name %>さんがログインしています</p>
+      <%# <%= link_to current_user.name, edit_user_path(current_user)%>
   <p>※入力後はログアウトを<span>必ず</span>するように！</p>
   <div id="container">
       <button class="btn shukkin">出勤時クリック</button>
