@@ -7,11 +7,6 @@
   </div>
 
   <div id="container">
-    <button class="btn">入力前にログイン</button>
-    <button class="btn">入力後にログアウト</button>
+    <button class="btn"><%= link_to "ログアウト",destroy_user_session_path, method: :delete, class: 'link'%></button>
   <button class="btn">管理者用ページ</button>
-  </div>
-
-  <div id="container">
-    <button class="btn">新しく来た方はコチラで登録して下さい</button>
   </div>
