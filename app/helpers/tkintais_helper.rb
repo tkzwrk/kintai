@@ -1,0 +1,2 @@
+module TkintaisHelper
+end

@@ -1,0 +1,13 @@
+<h1><%= current_user.name %>さんの退勤入力画面</h1>
+
+<div class="kintai-main">
+  <h2>勤怠情報の入力</h2>
+
+    <%= form_for(@tkintai) do |f| %>
+    <p>退勤日時入力</p>
+      <%= f.datetime_select :tdate %>
+      <%= f.submit "退勤時間を入力してクリック" ,class:"btn" %><br>
+      <button class="btn"><%= link_to "戻る",root_path, method: :delete, class: 'link'%></button>
+    <% end %> 
+
+</div>

@@ -1,0 +1,2 @@
+class Tkintai < ApplicationRecord
+end

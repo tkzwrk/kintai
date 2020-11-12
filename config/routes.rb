@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root to: "kintais#index"
   resources :users, only: [:edit, :update]
   resources :kintaikintais, only: [:new, :create]
+  resources :tkintais, only: [:new, :create]
+  resources :shihutos, only: [:new, :create]
 end

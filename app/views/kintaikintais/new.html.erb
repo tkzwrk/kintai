@@ -6,11 +6,8 @@
     <%= form_for(@kintaikintai) do |f| %>
     <p>出勤日時入力</p>
       <%= f.datetime_select :sdate %>
-      <%= f.submit "出勤時間を入力してクリック" ,class:"btn" %>
-
-    <p>退勤日時入力</p>
-      <%= f.datetime_select :tdate %>
-      <%= f.submit "退勤時間を入力してクリック" ,class:"btn" %>
+      <%= f.submit "出勤時間を入力してクリック" ,class:"btn" %><br>
+      <button class="btn"><%= link_to "戻る",root_path, method: :delete, class: 'link'%></button>
     <% end %> 
 
 </div>

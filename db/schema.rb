@@ -10,15 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_11_120342) do
+ActiveRecord::Schema.define(version: 2020_11_12_055211) do
 
   create_table "kintaikintais", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.datetime "sdate", null: false
-    t.datetime "tdate", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_kintaikintais_on_user_id"
+  end
+
+  create_table "shihutos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "year1", null: false
+    t.string "month1", null: false
+    t.string "day1", null: false
+    t.text "note1", null: false
+    t.string "year2", null: false
+    t.string "month2", null: false
+    t.string "day2", null: false
+    t.text "note2", null: false
+    t.string "year3", null: false
+    t.string "month3", null: false
+    t.string "day3", null: false
+    t.text "note3", null: false
+    t.string "year4", null: false
+    t.string "month4", null: false
+    t.string "day4", null: false
+    t.text "note4", null: false
+    t.string "year5", null: false
+    t.string "month5", null: false
+    t.string "day5", null: false
+    t.text "note5", null: false
+    t.string "year6", null: false
+    t.string "month6", null: false
+    t.string "day6", null: false
+    t.text "note6", null: false
+    t.string "year7", null: false
+    t.string "month7", null: false
+    t.string "day7", null: false
+    t.text "note7", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_shihutos_on_user_id"
+  end
+
+  create_table "tkintais", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.datetime "tdate", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_tkintais_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
@@ -33,4 +75,6 @@ ActiveRecord::Schema.define(version: 2020_11_11_120342) do
   end
 
   add_foreign_key "kintaikintais", "users"
+  add_foreign_key "shihutos", "users"
+  add_foreign_key "tkintais", "users"
 end
