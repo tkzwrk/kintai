@@ -5,35 +5,35 @@
 
     <%= form_for(@shihuto) do |f| %>
     <p>シフト入力</p>
-    <%= f.fields_for :shihutos do |f| %>
-      20<%= f.text_field :year1, class:"items-text", id:"item-name", placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
-      <%= f.text_field :month1, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
-      <%= f.text_field :day1, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
-      <%= f.text_field :note1, class:"items-text", id:"item-name", placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
-      20<%= f.text_field :year2, class:"items-text", id:"item-name", placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
-      <%= f.text_field :month2, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
-      <%= f.text_field :day2, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
-      <%= f.text_field :note2, class:"items-text", id:"item-name", placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
-      20<%= f.text_field :year3, class:"items-text", id:"item-name", placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
-      <%= f.text_field :month3, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
-      <%= f.text_field :day3, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
-      <%= f.text_field :note3, class:"items-text", id:"item-name", placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
-      20<%= f.text_field :year4, class:"items-text", id:"item-name", placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
-      <%= f.text_field :month4, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
-      <%= f.text_field :day4, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
-      <%= f.text_field :note4, class:"items-text", id:"item-name", placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
-      20<%= f.text_field :year5, class:"items-text", id:"item-name", placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
-      <%= f.text_field :month5, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
-      <%= f.text_field :day5, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
-      <%= f.text_field :note5, class:"items-text", id:"item-name", placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
-      20<%= f.text_field :year6, class:"items-text", id:"item-name", placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
-      <%= f.text_field :month6, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
-      <%= f.text_field :day6, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
-      <%= f.text_field :note6, class:"items-text", id:"item-name", placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
-      20<%= f.text_field :year7, class:"items-text", id:"item-name", placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
-      <%= f.text_field :month7, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
-      <%= f.text_field :day7, class:"items-text", id:"item-name", placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
-      <%= f.text_field :note7, class:"items-text", id:"item-name", placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
+    <%= f.fields_for :shihuto do |f| %>
+      20<%= f.text_field :year1,placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
+      <%= f.text_field :month1,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
+      <%= f.text_field :day1,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
+      <%= f.text_field :note1,  placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
+      20<%= f.text_field :year2,  placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
+      <%= f.text_field :month2,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
+      <%= f.text_field :day2,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
+      <%= f.text_field :note2,  placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
+      20<%= f.text_field :year3,  placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
+      <%= f.text_field :month3,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
+      <%= f.text_field :day3,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
+      <%= f.text_field :note3,  placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
+      20<%= f.text_field :year4,  placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
+      <%= f.text_field :month4,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
+      <%= f.text_field :day4,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
+      <%= f.text_field :note4,  placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
+      20<%= f.text_field :year5,  placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
+      <%= f.text_field :month5,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
+      <%= f.text_field :day5,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
+      <%= f.text_field :note5,  placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
+      20<%= f.text_field :year6,  placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
+      <%= f.text_field :month6,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
+      <%= f.text_field :day6,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
+      <%= f.text_field :note6,  placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
+      20<%= f.text_field :year7,  placeholder:"例：20", maxlength:"2" ,:size => "6*6"%>年
+      <%= f.text_field :month7,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>月
+      <%= f.text_field :day7,  placeholder:"例：10", maxlength:"2" ,:size => "6*6"%>日、時間
+      <%= f.text_field :note7,  placeholder:"例：10時から18時まで or 休み", maxlength:"100" ,:size => "60*60"%>
 
       <%= f.submit "シフトを提出する" ,class:"btn" %><br>
       <button class="btn"><%= link_to "戻る",root_path, method: :delete, class: 'link'%></button>
